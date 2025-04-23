@@ -1,5 +1,6 @@
 import GoBack from "./GoBack";
 import './Web.css'
+import blob from '../assets/blob.webp'
 
 export default function Web({ onClose }) {
     return (
@@ -13,7 +14,7 @@ export default function Web({ onClose }) {
                     rel="noopener noreferrer"
                     className="web-item"
                 >
-                    <img src="../src/assets/blob.webp" />
+                    <img src={blob} />
                     <h3>Bearcast Media</h3>
                 </a>
                 <a
@@ -22,7 +23,7 @@ export default function Web({ onClose }) {
                     rel="noopener noreferrer"
                     className="web-item"
                 >
-                    <img src="../src/assets/blob.webp" />
+                    <img src={blob} />
                     <h3>Non-Profit</h3>
                 </a>
                 <a
@@ -31,7 +32,7 @@ export default function Web({ onClose }) {
                     rel="noopener noreferrer"
                     className="web-item"
                 >
-                    <img src="../src/assets/blob.webp" />
+                    <img src={blob} />
                     <h3>It's A New Day Behavioral Daycare</h3>
                 </a>
             </div>

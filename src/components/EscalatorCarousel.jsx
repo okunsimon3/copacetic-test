@@ -7,11 +7,11 @@ import pattern from '../assets/pattern.webp'
 import wave from '../assets/wave.webp'
 
 const slides = [
-  { title: 'Branding', text: 'Elevate your branding to new heights. ', image: {blob} },
-  { title: 'Animation', text: 'Creative 2d/3d animation', image: {terrain} },
-  { title: 'Graphic Design', text: 'Custom graphics tailored to your needs', image: {graphicImg} },
-  { title: 'Photography', text: 'Professional quality photos for marketing anything', image: {pattern} },
-  { title: 'Web Development', text: 'Bring your website to life with creativity', image: {wave} }
+  { title: 'Branding', text: 'Elevate your branding to new heights. ', image: blob },
+  { title: 'Animation', text: 'Creative 2d/3d animation', image: terrain },
+  { title: 'Graphic Design', text: 'Custom graphics tailored to your needs', image: graphicImg },
+  { title: 'Photography', text: 'Professional quality photos for marketing anything', image: pattern },
+  { title: 'Web Development', text: 'Bring your website to life with creativity', image: wave }
 ];
 
 export default function EscalatorCarousel() {
