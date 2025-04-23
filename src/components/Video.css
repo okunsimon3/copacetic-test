@@ -1,0 +1,50 @@
+.video-page {
+    position: fixed; /* or absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* or auto if it scrolls */
+    background: rgb(27, 27, 27);
+    z-index: 10; /* higher than the image */
+    overflow-y: auto;
+}
+.video-page h2 {
+    font-size: 3rem;
+    margin-top: 0;
+    padding-top: 2rem;
+    color: white;
+}
+
+.video-wrapper {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.video-item {
+    width: 100%;
+    text-align: left;
+    background-color: rgb(84, 84, 84);
+    border-radius: 2rem;
+}
+.video-item:hover {
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+}
+.video-item:hover h3 {
+    color: var(--copacetic-orange);
+}
+.video-item iframe {
+    width: 100%;
+    position: initial;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+.video-item h3 {
+    font-size: 1rem;
+    margin-top: 0;
+    padding: 2rem;
+    color: white;
+}

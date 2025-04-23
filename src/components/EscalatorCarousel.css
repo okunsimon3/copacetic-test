@@ -1,0 +1,50 @@
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.carousel-track {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: max-content;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+    min-width: 15%;
+    height: 22rem;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 2rem;
+    justify-content: flex-start;
+    overflow: hidden;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    transition: all .2s ease-in-out;
+}
+.carousel-slide:hover {
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.carousel-slide:hover h2{
+    color: var(--copacetic-orange);
+}
+
+.carousel-content {
+    width: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: left;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}

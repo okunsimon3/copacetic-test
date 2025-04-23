@@ -17,8 +17,14 @@ export default function Home() {
     return (
         <>
         <div className="home-container">
-            <video src={reactLogo} autoPlay muted></video>
-            <h3>Hello</h3>
+            <video
+                ref={videoRef}
+                className="logo-reel"
+                src="../src/assets/Copacetic_Logo_REEL.mov"
+                autoPlay
+                muted
+                loop
+            ></video>
             <NavLink 
                 className="home-link"
                 to="./media"

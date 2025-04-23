@@ -1,0 +1,50 @@
+.profile-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background-color: var(--copacetic-orange);
+    padding: 2rem;
+    text-align: left;
+    gap: 2rem;
+}
+.profile-img {
+    grid-column: span 1;
+}
+.profile-img img {
+    width: 100%;
+    border-radius: 2rem;
+}
+.profile-text h2 {
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+.team-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: 2rem;
+    margin-top: 8rem;
+}
+
+.team-item {
+    background-color: rgb(255, 231, 196);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.team-item h3, h4, p {
+    margin: 0;
+}
+.team-item img {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

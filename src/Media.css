@@ -1,0 +1,56 @@
+.media-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ensure the wrapper takes the full viewport height */
+    overflow: hidden;
+    background-image: url({mediaRoom}); /* Set your image here */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Keeps the image centered */
+    background-attachment: fixed; /* Prevents scrolling of the background image */
+    z-index: 1;
+}
+
+.media-wrapper button {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 1.8rem;
+    background-color: transparent;
+    position: absolute;
+    color: var(--copacetic-yellow);
+    text-shadow: 2px 2px #000000;
+    border: none;
+    z-index: 2 !important;
+}
+
+.media-wrapper button:hover {
+    color: var(--copacetic-orange);
+    border: none;
+}
+
+.media-wrapper button:focus {
+    outline: none;
+}
+
+.graphic-btn {
+    padding-left: 3.1rem;
+    padding-right: 3.1rem;
+    transform: rotateZ(-1deg) rotateY(25deg) rotateX(-2deg);
+    top: 39.5%;
+    left: 29%;
+}
+
+.web-btn {
+    top: 32%;
+    left: 49%;
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+    transform: rotateZ(2deg) rotateY(5deg) rotateX(0deg);
+}
+
+.video-btn {
+    top: 57.5%;
+    left: 65%;
+    padding-left: 3.6rem;
+    padding-right: 3.6rem;
+    transform: rotateZ(3deg) rotateY(-30deg) rotateX(10deg);
+}

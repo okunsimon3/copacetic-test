@@ -1,0 +1,27 @@
+.magazine-wrapper {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.magazine-item {
+    width: 100%;
+    text-align: left;
+    background-color: rgb(84, 84, 84);
+    border-radius: 2rem;
+}
+
+.magazine-item img {
+    width: 100%;
+    position: initial;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+.magazine-item h3 {
+    font-size: 1rem;
+    margin-top: 0;
+    padding: 2rem;
+    color: white;
+}
