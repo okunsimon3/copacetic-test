@@ -22,12 +22,9 @@ function App() {
           count is {count}
         </button>
         <p>
-          This is just a test for copacetic
+          I made a change
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
