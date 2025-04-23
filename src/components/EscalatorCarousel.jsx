@@ -1,17 +1,17 @@
 import { useRef, useEffect, useCallback } from "react";
 import './EscalatorCarousel.css';
-import blob from '../assets/blob.webp'
-import terrain from '../assets/terrain.webp'
+import Los_CunadosStickers from '../assets/Los_CunadosStickerscorrect.png';
+import terrain from '../assets/render2.jpg'
 import graphicImg from '../assets/graphic.webp'
-import pattern from '../assets/pattern.webp'
-import wave from '../assets/wave.webp'
+import dellah from '../assets/Playing-Games-04.jpeg'
+import tech from '../assets/IMG_2984.webp'
 
 const slides = [
-  { title: 'Branding', text: 'Elevate your branding to new heights. ', image: blob },
+  { title: 'Branding', text: 'Elevate your branding to new heights. ', image: Los_CunadosStickers },
   { title: 'Animation', text: 'Creative 2d/3d animation', image: terrain },
   { title: 'Graphic Design', text: 'Custom graphics tailored to your needs', image: graphicImg },
-  { title: 'Photography', text: 'Professional quality photos for marketing anything', image: pattern },
-  { title: 'Web Development', text: 'Bring your website to life with creativity', image: wave }
+  { title: 'Photography', text: 'Professional quality photos for marketing anything', image: dellah },
+  { title: 'Web Development', text: 'Bring your website to life with creativity', image: tech }
 ];
 
 export default function EscalatorCarousel() {

@@ -18,13 +18,13 @@ export default function Web({ onClose }) {
                     <h3>Bearcast Media</h3>
                 </a>
                 <a
-                    href="https://example-nonprofit.org"
+                    href="https://sideglow.io/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="web-item"
                 >
                     <img src={blob} />
-                    <h3>Non-Profit</h3>
+                    <h3>Side By Side</h3>
                 </a>
                 <a
                     href="https://itsanewdayohio.com/"
