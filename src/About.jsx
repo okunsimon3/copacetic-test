@@ -3,12 +3,12 @@ import './About.css'
 import { NavIcon } from './components/NavIcon';
 import EscalatorCarousel from './components/EscalatorCarousel';
 import Profile from './components/Profile';
-import starsWithSky from './assets/parallax/Starsandsky.webp'
-import bgMountain from './assets/parallax/Mountains1.webp';
-import fgMountain from './assets/parallax/Mountains2.webp';
-import ground from './assets/parallax/Ground.webp';
-import flatground from './assets/parallax/Water.webp';
-import trees from './assets/parallax/trees.webp';
+import starsWithSky from './assets/parallax/stars2.webp'
+import bgMountain from './assets/parallax/bgmountain2.webp';
+import fgMountain from './assets/parallax/fgmountain2.webp';
+import ground from './assets/parallax/hill2.webp';
+import flatground from './assets/parallax/water2.webp';
+import trees from './assets/parallax/trees2.webp';
 import parallax1 from './assets/parallax/parallax-2.webp'
 import parallax2 from './assets/parallax/parallax-2_2.webp'
 
