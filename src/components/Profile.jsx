@@ -1,6 +1,6 @@
 import './Profile.css'
 import profileImg from '../assets/groupprofile.webp'
-import headshot from '../assets/headshot.jpg'
+import headshot from '../assets/headshot.JPG'
 
 
 export default function Profile() {
