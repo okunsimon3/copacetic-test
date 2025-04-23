@@ -1,0 +1,77 @@
+
+.parallax-intro {
+    position: relative;
+    width: 100%;
+    height: 125vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parallax-intro::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+}
+.parallax-intro::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.parallax-intro img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#text {
+    position: relative;
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px #242424;
+    font-weight: bold;
+    margin-top: -10rem;
+}
+
+.parallax-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallax-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    will-change: transform;
+    z-index: 2;
+}
+
+.parallax-container img:nth-child(2) {
+    width: 120%;
+    height: auto;
+}
+#mountain,
+#mist,
+#bg-trees,
+#fg-trees,
+#text,
+#france {
+    will-change: transform;
+}
+#france {
+    z-index: 1; /* This one appears on top of parallax-bg */
+}
