@@ -3,7 +3,7 @@ import './About.css'
 import { NavIcon } from './components/NavIcon';
 import EscalatorCarousel from './components/EscalatorCarousel';
 import Profile from './components/Profile';
-import stars from './assets/parallax/StarsandSky.webp';
+import starsWithSky from './assets/parallax/Starsandsky.webp'
 import bgMountain from './assets/parallax/Mountains1.webp';
 import fgMountain from './assets/parallax/Mountains2.webp';
 import ground from './assets/parallax/Ground.webp';
@@ -63,7 +63,7 @@ export default function Media() {
         <>
         <NavIcon />
         <section className='parallax-intro'>
-            <img ref={starsRef} src={stars} id='stars'/>
+            <img ref={starsRef} src={starsWithSky} id='stars'/>
             <img ref={bgMountainRef} src={bgMountain} id='bg-mountain'/>
             <h2 ref={textRef} id="text">What is Copacetic?</h2>
             <img ref={fgMountainRef} src={fgMountain} id='fg-mountain'/>
