@@ -1,5 +1,5 @@
 import './Profile.css'
-import profileImg from '../assets/groupprofile.webp'
+import profileImg from '../assets/groupprofile_2.jpg'
 import headshot from '../assets/headshot.JPG'
 
 
@@ -15,7 +15,7 @@ export default function Profile() {
             </div>
             <div className='team-wrapper'>
                     <div className='team-item'>
-                        <img src='../src/assets/headshot.JPG'/>
+                        <img src={headshot}/>
                         <h3>Aiden Horstmeier</h3>
                         <p>BFA in Media Production</p>
                     </div>

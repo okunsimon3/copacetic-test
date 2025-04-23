@@ -11,6 +11,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --copacetic-orange: #F68C1E;
+  --copacetic-green: #6DC28B;
+  --copacetic-yellow: #fEE100;
 }
 
 a {
@@ -28,6 +32,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: Helvetica, Sans-Serif;
 }
 
 h1 {
