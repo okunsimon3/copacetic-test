@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { NavLink } from "react-router-dom"
 import './Home.css'
-import reactLogo from './assets/react.svg'
+import reactLogo from './assets/Copacetic_Logo_REEL.mov'
 
 export default function Home() {
     const videoRef = useRef(null);
@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <>
         <div className="home-container">
-            <img src={reactLogo}></img>
+            <video src={reactLogo} autoPlay muted></video>
             <h3>Hello</h3>
             <NavLink 
                 className="home-link"
