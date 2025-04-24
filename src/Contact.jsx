@@ -25,7 +25,7 @@ const Contact = () => (
                     </label>
                 </div>
                 <div>
-                    <label>Description
+                    <label>More Info
                         <textarea name="comments"></textarea>
                     </label>
                 </div>
