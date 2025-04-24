@@ -1,6 +1,8 @@
 import GoBack from "./GoBack";
-import './Web.css'
-import blob from '../assets/blob.webp'
+import './Web.css';
+import newDay from '../assets/newday.png';
+import bearcast from '../assets/bearcast.png';
+import sideBySide from '../assets/sidebyside.png';
 
 export default function Web({ onClose }) {
     return (
@@ -14,7 +16,7 @@ export default function Web({ onClose }) {
                     rel="noopener noreferrer"
                     className="web-item"
                 >
-                    <img src={blob} />
+                    <img src={bearcast} />
                     <h3>Bearcast Media</h3>
                 </a>
                 <a
@@ -23,7 +25,7 @@ export default function Web({ onClose }) {
                     rel="noopener noreferrer"
                     className="web-item"
                 >
-                    <img src={blob} />
+                    <img src={sideBySide} />
                     <h3>Side By Side</h3>
                 </a>
                 <a
@@ -32,7 +34,7 @@ export default function Web({ onClose }) {
                     rel="noopener noreferrer"
                     className="web-item"
                 >
-                    <img src={blob} />
+                    <img src={newDay} />
                     <h3>It's A New Day Behavioral Daycare</h3>
                 </a>
             </div>

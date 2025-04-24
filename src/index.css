@@ -1,7 +1,7 @@
 @import url('https://use.typekit.net/wkm4xss.css');
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -34,7 +34,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  font-family: Helvetica, Sans-Serif;
 }
 
 h1 {
@@ -51,11 +50,6 @@ h2 {
   font-style: normal;
 }
 
-h3 {
-  font-family: "acumin-pro", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
 
 button {
   border-radius: 8px;
