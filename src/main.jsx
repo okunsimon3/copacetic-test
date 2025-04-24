@@ -1,13 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './Home.jsx'
 import Media from './Media.jsx'
 import About from './About.jsx'
 import Contact from './Contact.jsx'
-import Success from './components/Success.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
