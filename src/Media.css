@@ -8,6 +8,7 @@
     background-position: center; /* Keeps the image centered */
     background-attachment: fixed; /* Prevents scrolling of the background image */
     z-index: 1;
+    display: grid;
 }
 
 .media-wrapper button {

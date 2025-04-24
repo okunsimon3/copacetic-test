@@ -2,6 +2,8 @@ import './Profile.css'
 import profileImg from '../assets/groupprofile_2.jpg'
 import headshot from '../assets/headshot.JPG'
 import headshotA from '../assets/headshotA.jpg'
+import { Link } from 'react-router-dom';
+
 
 
 export default function Profile() {
@@ -13,7 +15,9 @@ export default function Profile() {
             <div className="profile-text">
                 <h2>Who We Are</h2>
                 <p>We are a small team of creatives, each with our own media specialization. With years of both school and work experience we have the tools to create engaging media for any business.</p>
-                <button className='contact-button'>Get In Touch</button>
+                <Link to='/contact'>
+                    <button className='contact-button'>Get In Touch</button>
+                </Link>
             </div>
             <div className='team-wrapper'>
                     <div className='team-item'>

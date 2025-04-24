@@ -5,10 +5,14 @@
     margin: 0 auto;
 }
 .contact-container h1 {
-    color: red;
+    color: var(--copacetic-orange);
 }
 .contact-left {
     text-align: left;
+}
+
+.contact-left {
+    grid-column: 1 /span 2;
 }
 .contact-form {
     grid-column: 3 /span 3;
@@ -17,9 +21,11 @@
 .contact-form label {
     display: flex;
     flex-direction: column;
-    color: var(--copacetic-yellow);
+    color: var(--copacetic-orange);
     margin-top: 2rem;
     margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family: 'acumin-pro';
 }
 .contact-form input {
     margin-top: 1.5rem;
@@ -30,4 +36,14 @@
     margin-top: 1.5rem;
     border-radius: .5rem;
     height: 5rem;
+}
+
+.contact-form button {
+    background-color: var(--copacetic-orange);
+    color: #242424;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: var(--copacetic-yellow);
 }

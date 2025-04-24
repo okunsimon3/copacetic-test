@@ -2,6 +2,8 @@ import { useRef } from "react";
 import { NavLink } from "react-router-dom"
 import './Home.css'
 import homeVideo from './assets/Copacetic_Logo_REEL.mov'
+import enterImg from './assets/Copa_Buttons_drop-06.png'
+import enterImg2 from './assets/Copa_Buttons_drop-05.png'
 
 export default function Home() {
     const videoRef = useRef(null);
@@ -26,11 +28,14 @@ export default function Home() {
                 loop
             ></video>
             <NavLink 
-                className="home-link"
-                to="./media"
+                className="image-button-wrapper"
+                to="/media"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-            >Enter Site</NavLink>
+            >
+                <img src={enterImg} alt="Enter Site" className="button-img default" />
+                <img src={enterImg2} alt="Enter Site Hover" className="button-img hover" />
+            </NavLink>
         </div>
         </>
     )

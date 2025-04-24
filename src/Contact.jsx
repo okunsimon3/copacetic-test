@@ -1,11 +1,12 @@
 import './Contact.css'
+import { NavIcon } from './components/NavIcon';
 
 const Contact = () => (
     <div className="contact-page">
+        <NavIcon />
         <div className='contact-container'>
             <div className='contact-left'>
                 <h1>Get In Touch</h1>
-                <p>Hello</p>
             </div>
             <form className='contact-form' 
             name='contact'
