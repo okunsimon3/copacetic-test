@@ -17,7 +17,6 @@ createRoot(document.getElementById('root')).render(
         <Route path='/media' element={<Media />}></Route>
         <Route path='/about' element={<About />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
-        <Route path="/success" element={<Success />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
