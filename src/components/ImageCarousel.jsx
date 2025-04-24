@@ -7,14 +7,14 @@ export default function ImageCarousel({ images }) {
     const intervalRef = useRef(null);
     const timeoutRef = useRef(null);
     const isHovering = useRef(false);
-  
+
     const startAutoSlide = () => {
         if (intervalRef.current) clearInterval(intervalRef.current);
         intervalRef.current = setInterval(() => {
             if (!isHovering.current) {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
             }
-        }, 5000);
+        }, 3000);
         };
     
         useEffect(() => {

@@ -4,7 +4,7 @@ import './Graphic.css'
 import GrpahicNav from './GraphicNav'
 import Social from './Social'
 import Magazines from './Magazines'
-import Illustrations from './Illustrations'
+import Photography from './Photography'
 
 export default function Graphics({onClose}) {
 
@@ -16,8 +16,8 @@ export default function Graphics({onClose}) {
                 return <Social />;
             case 'magazines':
                 return <Magazines />;
-            case 'illustrations':
-                return <Illustrations />;
+            case 'photography':
+                return <Photography />;
             default:
                 return null;
         }

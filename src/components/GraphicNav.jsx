@@ -10,7 +10,7 @@ export default function GrpahicNav({setActiveTab}) {
                 <a onClick={() => setActiveTab('magazines')}>Magazines</a>
             </div>
             <div>
-                <a onClick={() => setActiveTab('illustrations')}>Illustrations</a>
+                <a onClick={() => setActiveTab('photography')}>Photograhpy</a>
             </div>
         </div>
     )

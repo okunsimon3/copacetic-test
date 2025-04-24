@@ -1,0 +1,180 @@
+.photography-wrapper {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+    grid-auto-rows: 100px 100px;
+    grid-gap: 2rem;
+    grid-auto-flow: dense;
+}
+
+.photography-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+.media-container {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+/* Shared styles for both images and videos */
+.photography-card img,
+.photography-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Hover zoom effect */
+.photography-card:hover img,
+.photography-card:hover video {
+    transform: scale(1.5);
+    filter: brightness(30%);
+}
+
+.social-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+}
+
+.social-text h3 {
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.photography-card:hover .social-text h3 {
+    opacity: 1;
+    animation: move-down 0.3s linear;
+}
+
+/* Grid spans */
+.w-1 {
+    grid-column: span 1;
+}
+.w-2 {
+    grid-column: span 2;
+}
+.w-3 {
+    grid-column: span 3;
+}
+.h-1 {
+    grid-row: span 1;
+}
+.h-2 {
+    grid-row: span 2;
+}
+.h-3 {
+    grid-row: span 3;
+}
+.h-4 {
+    grid-row: span 4;
+}
+
+/* Lightbox */
+/* Lightbox Overlay */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+/* Lightbox Content */
+.lightbox-content {
+    position: relative;
+    max-width: 28%;  /* Makes sure the image isn't too big */
+    max-height: 28%; /* Keeps the image within 90% of the screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lightbox Image */
+.lightbox-content img {
+    width: 100%;
+    height: auto;   /* Ensures aspect ratio is preserved */
+    object-fit: contain; /* Keeps the image within the container and preserves aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+/* Lightbox Navigation Buttons */
+.lightbox-prev, .lightbox-next, .lightbox-close {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1100;
+}
+
+.lightbox-prev {
+    left: 15.5rem;
+    top: 35%;
+    padding: 0 !important;
+    margin: 0;
+    scale: 0.3;
+    transition: scale 0.1s ease-in-out;
+}
+.lightbox-prev img {
+    transform: rotateZ(180deg);
+}
+
+.lightbox-next {
+    right: 15.5rem;
+    top: 35%;
+    padding: 0 !important;
+    margin: 0;
+    scale: 0.3;
+    transition: scale 0.1s ease-in-out;
+}
+.lightbox-next:hover {
+    scale: 0.4;
+}
+.lightbox-prev:hover {
+    scale: 0.4;
+}
+.lightbox-close {
+    top: 5rem;
+    right: 15.5rem;
+    font-size: 3.2rem !important;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+/* Prevent interaction with the background when lightbox is open */
+.lightbox-content, .lightbox-prev, .lightbox-next, .lightbox-close {
+    pointer-events: auto;
+}
