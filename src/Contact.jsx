@@ -8,12 +8,12 @@ const Contact = () => (
                 <p>Hello</p>
             </div>
             <form className='contact-form' 
-            name="contact v1" 
-            method='post' 
+            name="contact" 
+            method='POST'
             data-netlify="true" 
             onSubmit="submit"
             >
-                <input type="hidden" name="form-name" value="contact v1" />
+                <input type="hidden" name="form-name" value="contact" />
                 <div>
                     <label>First Name
                         <input type="text" name="first-name" />
@@ -26,7 +26,7 @@ const Contact = () => (
                 </div>
                 <div>
                     <label>More Info
-                        <textarea name="comments"></textarea>
+                        <textarea name="message"></textarea>
                     </label>
                 </div>
                 <button type="submit">Submit</button>
