@@ -9,8 +9,8 @@ import fgMountain from './assets/parallax/fgmountain2.webp';
 import ground from './assets/parallax/hill2.webp';
 import flatground from './assets/parallax/water2.webp';
 import trees from './assets/parallax/trees2.webp';
-import parallax1 from './assets/parallax/parallax-2.webp'
-import parallax2 from './assets/parallax/parallax-2_2.webp'
+import parallaxMask from './assets/parallax/parrallax2.webp'
+import parallaxBg from './assets/parallax/parrallaxbg.webp'
 
 export default function Media() {
 
@@ -37,8 +37,8 @@ export default function Media() {
             fgMountainRef.current.style.transform = `translate3d(0, ${lastScrollY.current * 0.6}px, 0)`;
             flatgroundRef.current.style.transform = `translate3d(0, ${lastScrollY.current * 0.5}px, 0)`;
             groundRef.current.style.transform = `translate3d(0, ${lastScrollY.current * 0.05}px, 0)`;
-            treesRef.current.style.transform = `translate3d(0, ${lastScrollY.current * 0}px, 0)`;
-            parallaxRef.current.style.transform = `translate3d(0, -${lastScrollY.current * 0.4}px, 0)`;
+            treesRef.current.style.transform = `translate3d(0, ${lastScrollY.current * 0.01}px, 0)`;
+            parallaxRef.current.style.transform = `translate3d(0, -${lastScrollY.current * 0.6}px, 0)`;
             
             ticking.current = false;
         }
@@ -72,8 +72,8 @@ export default function Media() {
             <img ref={treesRef} src={trees} id='trees'/>
         </section>
         <div className='parallax-container'>
-            <img ref={imageRef} src={parallax1} id='parallax-bg'/>
-            <img ref={parallaxRef} src={parallax2} id='france'/>
+            <img ref={imageRef} src={parallaxMask} id='parallax-bg'/>
+            <img ref={parallaxRef} src={parallaxBg} id='france'/>
         </div>
         <EscalatorCarousel />
         <Profile />

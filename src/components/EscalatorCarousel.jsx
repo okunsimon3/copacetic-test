@@ -2,14 +2,14 @@ import { useRef, useEffect, useCallback } from "react";
 import './EscalatorCarousel.css';
 import Los_CunadosStickers from '../assets/Los_CunadosStickerscorrect.png';
 import terrain from '../assets/render2.jpg'
-import graphicImg from '../assets/graphic.webp'
 import dellah from '../assets/Playing-Games-04.jpeg'
 import tech from '../assets/IMG_2984.webp'
+import Porch_Postcard from '../assets/Porch_Postcard_updated-01.jpeg';
 
 const slides = [
   { title: 'Branding', text: 'Elevate your branding to new heights. ', image: Los_CunadosStickers },
   { title: 'Animation', text: 'Creative 2d/3d animation', image: terrain },
-  { title: 'Graphic Design', text: 'Custom graphics tailored to your needs', image: graphicImg },
+  { title: 'Graphic Design', text: 'Custom graphics tailored to your needs', image: Porch_Postcard },
   { title: 'Photography', text: 'Professional quality photos for marketing anything', image: dellah },
   { title: 'Web Development', text: 'Bring your website to life with creativity', image: tech }
 ];
