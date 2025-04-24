@@ -39,9 +39,9 @@ const nextImage = () => setLightboxIndex((prevIndex) => (prevIndex + 1) % photog
 const prevImage = () => setLightboxIndex((prevIndex) => (prevIndex - 1 + photographyCards.length) % photographyCards.length);
 
 return (
-    <div className="social-wrapper">
+    <div className="photography-wrapper">
     {photographyCards.map((card, index) => (
-        <div key={card.id} className={`social-card ${card.width} ${card.height}`}>
+        <div key={card.id} className={`photography-card ${card.width} ${card.height}`}>
             <div className="media-container" onClick={() => openLightbox(index)}>
                 <img src={card.src} alt={card.name} />
             </div>

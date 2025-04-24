@@ -38,7 +38,7 @@ export default function Media() {
             flatgroundRef.current.style.transform = `translate3d(0, ${lastScrollY.current * 0.5}px, 0)`;
             groundRef.current.style.transform = `translate3d(0, ${lastScrollY.current * 0.05}px, 0)`;
             treesRef.current.style.transform = `translate3d(0, ${lastScrollY.current * 0.01}px, 0)`;
-            parallaxRef.current.style.transform = `translate3d(0, -${lastScrollY.current * 0.6}px, 0)`;
+            parallaxRef.current.style.transform = `translate3d(0, -${lastScrollY.current * 0.1}px, 0)`;
             
             ticking.current = false;
         }

@@ -27,6 +27,7 @@ export function NavIcon({ onMediaClick }) {
         <NavLink to="/">Home</NavLink>
         <NavLink to="/About">About</NavLink>
         <NavLink to="/Media" onClick={handleMediaClick}>Media</NavLink>
+        <NavLink to="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
         </ul>
     </nav>
     </div>

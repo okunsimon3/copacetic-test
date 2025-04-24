@@ -1,0 +1,33 @@
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: 0 auto;
+}
+.contact-container h1 {
+    color: red;
+}
+.contact-left {
+    text-align: left;
+}
+.contact-form {
+    grid-column: 3 /span 3;
+    text-align: left;
+}
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    color: var(--copacetic-yellow);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.contact-form input {
+    margin-top: 1.5rem;
+    border-radius: .5rem;
+    height: 2rem;
+}
+.contact-form textarea {
+    margin-top: 1.5rem;
+    border-radius: .5rem;
+    height: 5rem;
+}

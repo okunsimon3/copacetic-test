@@ -1,6 +1,7 @@
 import './Profile.css'
 import profileImg from '../assets/groupprofile_2.jpg'
 import headshot from '../assets/headshot.JPG'
+import headshotA from '../assets/headshotA.jpg'
 
 
 export default function Profile() {
@@ -16,10 +17,11 @@ export default function Profile() {
             </div>
             <div className='team-wrapper'>
                     <div className='team-item'>
-                        <img src={headshot}/>
+                        <img src={headshotA}/>
                         <div className='team-item-content'>
-                            <h3>Aiden Horstmeier</h3>
-                            <p>BFA in Media Production</p>
+                            <h3>Aidan Horstmeier</h3>
+                            <h4>BFA in Media Production</h4>
+                            <p>What inspires me?</p>
                             <a href='https://www.linkedin.com/in/aidanhorstmeier/' target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </div>
                     </div>
@@ -27,7 +29,8 @@ export default function Profile() {
                         <img src={headshot}/>
                         <div className='team-item-content'>
                             <h3>Simon Okun</h3>
-                            <p>BFA in Media Production</p>
+                            <h4>BFA in Media Production</h4>
+                            <p>I grew up on the internet — exploring websites, watching videos. Just like my family and friends, media has been with me throughout my life and has shaped me into the person I am today.</p>
                             <a href='https://www.linkedin.com/in/simonokun/' target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </div>
                     </div>

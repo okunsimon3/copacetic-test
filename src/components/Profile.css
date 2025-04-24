@@ -9,6 +9,7 @@
     padding: 2rem;
     text-align: left;
     gap: 2rem;
+    margin-bottom: 5%;
 }
 .profile-img {
     grid-column: span 1;
@@ -55,8 +56,26 @@
 .team-item-content h3 {
     margin: 0;
 }
+
+.team-item-content a {
+    background-color: var(--copacetic-green);
+    padding: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    color: white;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.team-item-content a:hover {
+    color: var(--copacetic-orange);
+    background-color: #242424;
+}
+.team-item-content p {
+    padding-bottom: 1rem;
+}
 .team-item img {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     border-radius: 50%;
     margin-top: 1rem;
