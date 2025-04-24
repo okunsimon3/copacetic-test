@@ -7,6 +7,7 @@ const Contact = () => (
                 <h1>Get In Touch</h1>
                 <p>Hello</p>
             </div>
+            <form name='contact-v1' netlify netlify-honeypot="bot-field" hidden></form>
             <form className='contact-form' 
             name='contact'
             method='POST'
