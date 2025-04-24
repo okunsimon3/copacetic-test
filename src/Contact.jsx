@@ -1,4 +1,4 @@
-import './components/Contact.css'
+import './Contact.css'
 
 const Contact = () => (
     <div className="contact-page">
@@ -11,6 +11,7 @@ const Contact = () => (
             name='contact'
             method='POST'
             data-netlify='True'
+            action="/success"
             >
                 <input type="hidden" name="form-name" value="contact" />
                 <div>
