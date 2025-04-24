@@ -8,10 +8,13 @@ const Contact = () => (
                 <p>Hello</p>
             </div>
             <form className='contact-form' 
-            name="contact" 
+            name='contact'
             method='POST'
-            data-netlify="true" 
-            onSubmit="submit"
+            data-netlify='True'
+            onSubmit={(e) => {
+                e.preventDefault();
+                // your custom logic here
+            }}
             >
                 <input type="hidden" name="form-name" value="contact" />
                 <div>
