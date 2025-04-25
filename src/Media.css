@@ -9,22 +9,22 @@
     background-attachment: fixed; /* Prevents scrolling of the background image */
     z-index: 1;
     display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(9, 1fr);
 }
 
 .media-wrapper button {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     background-color: transparent;
     position: absolute;
-    color: var(--copacetic-yellow);
+    color: var(--copacetic-orange);
     text-shadow: 2px 2px #000000;
     border: none;
     z-index: 2 !important;
 }
 
 .media-wrapper button:hover {
-    color: var(--copacetic-orange);
+    color: var(--copacetic-green);
     border: none;
 }
 
@@ -33,25 +33,32 @@
 }
 
 .graphic-btn {
-    padding-left: 3.1rem;
-    padding-right: 3.1rem;
-    transform: rotateZ(-3deg) rotateY(35deg) rotateX(-2deg);
-    top: 22.5%;
-    left: 5%;
+    transform: rotateZ(-4deg) rotateY(35deg) rotateX(-2deg) translateX(-1rem) translateY(-1rem);
+    grid-column: 2/3;
+    grid-row: 4/5;
 }
 
 .web-btn {
-    top: 27.5%;
-    left: 47.5%;
-    padding-right: 3.5rem;
-    padding-left: 3.5rem;
-    transform: rotateZ(2deg) rotateY(5deg) rotateX(0deg);
+    grid-column: 7/8;
+    grid-row: 4/5;
+    transform: translateX(1.5rem) translateY(-.3rem);
 }
 
 .video-btn {
-    top: 26.5%;
-    left: 80.5%;
-    padding-left: 3.6rem;
-    padding-right: 3.6rem;
-    transform: rotateZ(4deg) rotateY(-30deg) rotateX(10deg);
+    grid-column: 11/12;
+    grid-row: 4/5;
+    transform: rotateZ(3.5deg) rotateY(-30deg) rotateX(10deg) translateY(-1.2rem) translateX(2rem);
+}
+
+
+@media only screen and (min-width: 1500px) {
+    .graphic-btn {
+        transform: rotateZ(-4deg) rotateY(35deg) rotateX(-2deg) translateZ(5rem) translateY(1.6rem);
+    }
+    .web-btn {
+        transform: translateX(4.5rem) translateY(2.5rem);
+    }
+    .video-btn {
+        transform: rotateZ(3.5deg) rotateY(-30deg) rotateX(10deg) translateY(1rem) translateX(7rem);
+    }
 }

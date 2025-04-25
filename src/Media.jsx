@@ -4,7 +4,7 @@ import './Media.css'
 import Graphics from './components/Graphic';
 import Web from "./components/Web";
 import Video from "./components/Video";
-import mediaRoom from './assets/IMG_2991.jpg'
+import mediaRoom from './assets/mediarender.webp'
 
 
 export default function Media() {

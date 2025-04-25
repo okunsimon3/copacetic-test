@@ -1,5 +1,5 @@
 import './Profile.css'
-import profileImg from '../assets/groupprofile_2.jpg'
+import profileImg from '../assets/IMG_9052.JPG'
 import headshot from '../assets/headshot.JPG'
 import headshotA from '../assets/headshotA.jpg'
 import { Link } from 'react-router-dom';
