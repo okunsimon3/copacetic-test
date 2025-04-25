@@ -17,7 +17,7 @@ export default function Video({ onClose }) {
                 </div>
                 <div className="video-item">
                 <iframe width="560" height="200" src="https://www.youtube.com/embed/UZdSWX5mGs4?si=BwE-R5n3ANhSJBcX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                    <h3>Larry the Science Guy</h3>
+                    <h3>Effects of Social Perturbation on Rank in Bobwhite Quail Groups</h3>
                 </div>
             </div>
         </div>
